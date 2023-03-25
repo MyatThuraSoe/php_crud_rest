@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "007e7bee-be1a-4390-a17f-d9480158569d",
+		"name": "php_crud_rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19078240"
+	},
+	"item": [
+		{
+			"name": "localhost/php_crud_rest/api/post/read.php",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/php_crud_rest/api/post/read.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php_crud_rest",
+						"api",
+						"post",
+						"read.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/php_crud_rest/api/post/delete.php",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"id\": \"1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/php_crud_rest/api/post/delete.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php_crud_rest",
+						"api",
+						"post",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/php_crud_rest/api/post/read_single.php",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"id\": \"1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/php_crud_rest/api/post/read_single.php?id=1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php_crud_rest",
+						"api",
+						"post",
+						"read_single.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/php_crud_rest/api/post/update.php",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": {\r\n        \"id\": \"1\",\r\n        \"title\": \"Title 1\",\r\n        \"body\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum est nec lorem mattis interdum. Cras augue est, interdum eu consectetur et, faucibus vel turpis. Etiam pulvinar, enim quis elementum iaculis, tortor sapien eleifend eros, vitae rutrum augue quam sed leo. Vivamus fringilla, diam sit amet vestibulum vulputate, urna risus hendrerit arcu, vitae fringilla odio justo vulputate neque. Nulla a massa sed est vehicula rhoncus sit amet quis libero. Integer euismod est quis turpis hendrerit, in feugiat mauris laoreet. Vivamus nec laoreet neque. Cras condimentum aliquam nunc nec maximus. Cras facilisis eros quis leo euismod pharetra sed cursus orci.\",\r\n        \"author\": \"Sam Smith\",\r\n        \"category_id\": \"1\",\r\n        \"category_name\": \"Technology\"\r\n    },\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/php_crud_rest/api/post/update.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php_crud_rest",
+						"api",
+						"post",
+						"update.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "title",
+							"value": "title 1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost/php_crud_rest/api/post/update.php",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"6\",\r\n    \"title\": \"Gaming Post One 2\",\r\n    \"body\": \"Adipiscing elit. Ut interdum est nec lorem mattis interdum. Cras augue est, interdum eu consectetur et, faucibus vel turpis. Etiam pulvinar, enim quis elementum iaculis, tortor sapien eleifend eros,utrum augue quam sed leo. Vivamus fringilla, diam sit amet vestibulum vulputate, urna risus hendrerit arcu, vitae fringilla odio justo vulputate neque. Nulla a massa sed est vehicula rhoncus sit amet quis libero. Integer euismod est quis turpis hendrerit, in feugiat mauris laoreet. Vivamus nec laoreet neque.\",\r\n    \"author\": \"Kevin &  Williams\",\r\n    \"category_id\": \"2\",\r\n    \"category_name\": \"Gaming\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/php_crud_rest/api/post/update.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"php_crud_rest",
+						"api",
+						"post",
+						"update.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
